@@ -1,6 +1,7 @@
 <script setup>
-import { ref } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import Menubar from "primevue/menubar";
+
 
 const items = ref([
     {
@@ -8,12 +9,12 @@ const items = ref([
         icon: 'pi pi-home'
     },
     {
-        label: 'Features',
+        label: 'About me',
         icon: 'pi pi-star'
     },
     {
-        label: 'Projects',
-        icon: 'pi pi-search',
+        label: 'Featured projects',
+        icon: 'pi pi-box',
         items: [
             {
                 label: 'Components',
@@ -44,11 +45,41 @@ const items = ref([
         ]
     },
     {
+        label: 'Technical skills',
+        icon: 'pi pi-cog'
+    },
+    {
+        label: 'Work experience',
+        icon: 'pi pi-briefcase'
+    },
+    {
+        label: 'Download portfolio',
+        icon: 'pi pi-download'
+    },
+    {
         label: 'Contact',
         icon: 'pi pi-envelope'
     }
 ]);
+
+const windowWidth = ref(window.innerWidth);
+const menuBarClass = computed(() => {
+    return windowWidth.value < 1130 ? 'justify-start' : 'justify-around';
+});
+
+const updateWindowWidth = () => {
+    windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+    window.addEventListener('resize', updateWindowWidth);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('resize', updateWindowWidth);
+});
 </script>
 <template>
-    <Menubar :model="items" class="rounded-none!" />
+    <Menubar :model="items" :class="['rounded-none!', menuBarClass]" breakpoint="1130px" />
 </template>
+<style scoped></style>
