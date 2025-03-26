@@ -42,35 +42,35 @@ const toggleMenu = () => {
 			>
 				<router-link
 					to="/"
-					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700"
+					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700 text-(--vt-c-text-light-1) dark:text-inherit"
 					@click="isMenuOpen = false"
 				>
 					Home
 				</router-link>
 				<router-link
 					to="/#about"
-					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700"
+					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700 text-(--vt-c-text-light-1) dark:text-inherit"
 					@click="isMenuOpen = false"
 				>
 					About me
 				</router-link>
 				<router-link
 					to="/#projects"
-					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700"
+					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700 text-(--vt-c-text-light-1) dark:text-inherit"
 					@click="isMenuOpen = false"
 				>
 					Projects
 				</router-link>
 				<router-link
 					to="/#habilities"
-					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700"
+					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700 text-(--vt-c-text-light-1) dark:text-inherit"
 					@click="isMenuOpen = false"
 				>
 					Habilities
 				</router-link>
 				<router-link
 					to="/#contact"
-					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700"
+					class="block px-3 py-2 rounded hover:bg-slate-300 dark:hover:bg-slate-700 text-(--vt-c-text-light-1) dark:text-inherit"
 					@click="isMenuOpen = false"
 				>
 					Contact
