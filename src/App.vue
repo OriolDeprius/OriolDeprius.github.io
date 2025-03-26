@@ -31,7 +31,7 @@ function goTop() {
 
 <style>
 body{
-	background-image: url(/public/bg-rain.jpg);
+	background-image: url("@/assets/images/bg-rain.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

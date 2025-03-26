@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <section id="habilities" class="container backdrop-blur-xs border mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
+    <section id="habilities" class="container backdrop-blur-xs mx-auto mt-[2%]" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="flex flex-col justify-center items-center h-full">
             <h1 class="text-4xl font-bold text-center">My Habilities</h1>
             <p class="mt-4 text-lg text-center">I am proficient in various technologies and frameworks.</p>
@@ -91,7 +91,7 @@ import { RouterLink } from 'vue-router';
                 <p>Passionate about continuous learning and staying updated with the latest technologies.</p>
             </div>
         </div>
-        <div class="flex justify-center mt-8 mb-8">
+        <div class="flex justify-center mt-8">
             <router-link to="/#contact" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Contact Me</router-link>
         </div>
     </section>
