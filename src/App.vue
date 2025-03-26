@@ -29,4 +29,12 @@ function goTop() {
 	<footerComponent />
 </template>
 
-<style scoped></style>
+<style>
+body{
+	background-image: url(/public/bg-rain.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+</style>

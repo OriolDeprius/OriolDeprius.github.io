@@ -24,7 +24,7 @@ onUnmounted(() => {
 
 <template>
     <div
-        class="fixed bottom-4 right-4 duration-300 ease-in-out transform"
+        class="fixed bottom-4 right-4 duration-300 ease-in-out transform z-50"
         :class="{
             'translate-y-20 pointer-events-none': !isVisible,
             'trnaslate-y-0 pointer-events-auto': isVisible
