@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="contact" class="h-screen mt-[2%] backdrop-blur-xs container mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
+    <section id="contact" class="h-screen mt-[2%] backdrop-blur-md container mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="flex flex-col justify-center items-center h-full">
             <h1 class="text-4xl font-bold text-center">Contact Me</h1>
             <p class="mt-4 text-lg text-center">Feel free to reach out to me via email!</p>

@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-	<section id="home" class="backdrop-blur-xs h-screen container pt-10 mx-auto sm:pt-0" data-aos="zoom-in" data-aos-duration="2000">
+	<section id="home" class="backdrop-blur-md h-screen container pt-10 mx-auto sm:pt-0" data-aos="zoom-in" data-aos-duration="2000">
         <div class="flex flex-col justify-center content-center items-center h-full lg:flex-row">
             <div class="flex flex-col justify-center items-center w-full lg:w-3/5 lg:overflow-visible lg:ml-20 2xl:ml-35">
                 <div class="w-full lg:overflow-visible">
