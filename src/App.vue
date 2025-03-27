@@ -18,23 +18,41 @@ function goTop() {
 </script>
 
 <template>
-	<div class="background-container">
-        <headerComponent />
-        <returnTopComponent @scrollToTop="goTop" />
-        <home-view></home-view>
-        <about-view></about-view>
-        <habilities-view></habilities-view>
-        <contact-view></contact-view>
-        <footerComponent />
+	 <div class="app-container">
+        <div class="background"></div>
+        <div class="content">
+            <headerComponent />
+            <returnTopComponent @scrollToTop="goTop" />
+            <home-view></home-view>
+            <about-view></about-view>
+            <habilities-view></habilities-view>
+            <contact-view></contact-view>
+            <footerComponent />
+        </div>
     </div>
 </template>
 
 <style>
-.background-container {
+.app-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("@/assets/images/bg-rain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del fondo */
 }
 </style>
