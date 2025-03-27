@@ -18,28 +18,23 @@ function goTop() {
 </script>
 
 <template>
-	<headerComponent />
-	<returnTopComponent @scrollToTop="goTop"/>
-	<home-view></home-view>
-	<about-view></about-view>
-	<habilities-view></habilities-view>
-	<contact-view></contact-view>
-	<footerComponent />
+	<div class="background-container">
+        <headerComponent />
+        <returnTopComponent @scrollToTop="goTop" />
+        <home-view></home-view>
+        <about-view></about-view>
+        <habilities-view></habilities-view>
+        <contact-view></contact-view>
+        <footerComponent />
+    </div>
 </template>
 
 <style>
-body{
-	background-image: url("@/assets/images/bg-rain.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-}
-@media (max-width: 768px) {
-    body {
-        background-size: auto;
-        background-attachment: scroll;
-        background-position: top;
-    }
+.background-container {
+    background-image: url("@/assets/images/bg-rain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 </style>
