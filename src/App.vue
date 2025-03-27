@@ -35,4 +35,11 @@ body{
 	background-attachment: fixed;
 	background-position: center;
 }
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+        background-attachment: scroll;
+        background-position: top;
+    }
+}
 </style>
