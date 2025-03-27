@@ -1,5 +1,21 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        setTimeout(() => {
+            const offset = 100;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }, 1000);
+    }
+}
+
 </script>
 
 <template>
@@ -13,11 +29,15 @@ import { RouterLink } from 'vue-router';
                         </text>
                     </svg>
                 </div>
-                <p class="text-lg text-center lg:mt-15 lg:text-2xl">I am a full stack developer with a love<br>for creating amazing web applications.</p>
+                <p class="w-[90%] md:w-[75%] lg:w-[90%] text-lg text-center lg:mt-15 lg:text-2xl">I'm a <span class="underline">Full Stack Web Developer</span> passionate about building <span class="underline">dynamic</span> and <span class="underline">user-friendly</span> web applications.</p>
             </div>
             <div class="flex flex-col w-full justify-center items-center mt-5 sm:mt-8 lg:w-2/5 lg:mt-0">
                 <img src="@/assets/images/oriol.jpg" alt="Profile Picture" class="rounded-full shadow-lg shadow-slate-500 w-50 sm:w-70"/>
-                <router-link to="/#about" class="mt-5 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 sm:mt-8">Learn More About Me!</router-link>
+                <router-link to="/#about" 
+                class="mt-6 mb-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 sm:mt-8 sm:mb-8 animate-bounce"
+                @click.prevent="scrollToSection('about')">
+                Who Am I? Find Out!
+                </router-link>
             </div>
         </div>
     </section>

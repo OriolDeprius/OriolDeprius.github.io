@@ -1,16 +1,41 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import { RouterLink } from "vue-router";
 
 const isMenuOpen = ref(false);
+const isHeaderVisible = ref(true);
+let lastScrollPosition = 0;
 
 const toggleMenu = () => {
 	isMenuOpen.value = !isMenuOpen.value;
 };
+
+const handleScroll = () => {
+	const currentScrollPosition = window.scrollY;
+	isHeaderVisible.value = currentScrollPosition < lastScrollPosition || currentScrollPosition <= 0;
+	lastScrollPosition = currentScrollPosition;
+	if(isMenuOpen.value) {
+		isMenuOpen.value = false;
+	}
+};
+
+onMounted(() => {
+	window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+	window.removeEventListener("scroll", handleScroll);
+});
+
 </script>
 
 <template>
-	<header class="fixed w-full bg-slate-200 dark:bg-slate-800 p-4 z-50">
+	<header 
+	:class="{
+            'translate-y-0': isHeaderVisible,
+            '-translate-y-full': !isHeaderVisible,
+        }"
+	class="fixed w-full bg-slate-200 dark:bg-slate-800 p-4 z-50 transition-transform duration-300 ease-in-out">
 		<nav class="flex flex-row justify-between items-center">
 			<button
 				@click="toggleMenu"

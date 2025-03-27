@@ -5,7 +5,9 @@
 <template>
     <section id="contact" class="h-screen mt-[2%] backdrop-blur-md container mx-auto" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="flex flex-col justify-center items-center h-full">
+            <div class="border w-[90%] mt-[2%]"></div>
             <h1 class="text-4xl font-bold text-center">Contact Me</h1>
+            <div class="border w-[90%] mb-[2%]"></div>
             <p class="mt-4 text-lg text-center">Feel free to reach out to me via email!</p>
             <p class="mt-4 text-lg text-center">Or connect with me on LinkedIn!</p>
             <div class="flex flex-col sm:flex-row gap-5 mt-6">
