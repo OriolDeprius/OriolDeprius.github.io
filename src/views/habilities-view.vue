@@ -18,19 +18,27 @@ import { RouterLink } from 'vue-router';
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">CSS</h2>
-                <p>Skilled in styling web pages with CSS and frameworks like Tailwind CSS.</p>
+                <p>Skilled in styling web pages with CSS and frameworks like Tailwind CSS or Bootstrap.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">JavaScript</h2>
                 <p>Proficient in JavaScript and its frameworks like Vue.js.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
+                <h2 class="text-xl font-bold">PHP</h2>
+                <p>Familiar with backend development using PHP.</p>
+            </div>
+            <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
+                <h2 class="text-xl font-bold">Database Management</h2>
+                <p>Familiar with database management systems like MySQL and MongoDB.</p>
+            </div>
+            <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">Vue.js</h2>
                 <p>Experienced in building single-page applications with Vue.js.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
-                <h2 class="text-xl font-bold">Node.js</h2>
-                <p>Familiar with backend development using Node.js and Express.</p>
+                <h2 class="text-xl font-bold">Laravel</h2>
+                <p>Proficient in backend development using Laravel framework.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">Git</h2>
@@ -43,14 +51,6 @@ import { RouterLink } from 'vue-router';
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">APIs</h2>
                 <p>Experienced in working with RESTful APIs and third-party integrations.</p>
-            </div>
-            <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
-                <h2 class="text-xl font-bold">Testing</h2>
-                <p>Familiar with testing frameworks like Jest and Cypress.</p>
-            </div>
-            <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
-                <h2 class="text-xl font-bold">Deployment</h2>
-                <p>Experienced in deploying applications on platforms like Heroku and Vercel.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">Agile Methodologies</h2>
@@ -81,12 +81,16 @@ import { RouterLink } from 'vue-router';
                 <p>Strong attention to detail and ability to deliver high-quality work.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
-                <h2 class="text-xl font-bold">Leadership</h2>
-                <p>Experience in leading teams and mentoring junior developers.</p>
+                <h2 class="text-xl font-bold">Team Player</h2>
+                <p>Ability to work collaboratively in a team environment.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
-                <h2 class="text-xl font-bold">Project Management</h2>
-                <p>Experience in managing projects and working with clients.</p>
+                <h2 class="text-xl font-bold">Self-Motivated</h2>
+                <p>Self-motivated and able to work independently.</p>
+            </div>
+            <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
+                <h2 class="text-xl font-bold">Debugging</h2>
+                <p>Skilled in debugging and troubleshooting web applications.</p>
             </div>
             <div class="bg-slate-400 p-4 rounded shadow dark:bg-slate-700" data-aos="flip-up">
                 <h2 class="text-xl font-bold">Continuous Learning</h2>
