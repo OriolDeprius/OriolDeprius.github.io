@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router';
                 <p class="mt-4 text-md text-center lg:text-xl">🛠️ <b>My Toolkit:</b> Vue.js, PrimeVue, Tailwind CSS, Laravel, Livewire, Git...</p>
                 <p class="mt-4 text-md text-center lg:text-xl">💡 When I’m not coding, I love exploring new technologies, gaming, and learning about UI/UX trends.</p>
             </div>
-            <a href="@/assets/files/cv.pdf" download="Oriol_Deprius_CV.pdf" class="mt-8 text-blue-500 font-bold underline text-md text-center lg:text-xl">Download my CV</a>
+            <a href="@/assets/images/cv.pdf" download="Oriol_Deprius_CV.pdf" class="mt-8 text-blue-500 font-bold underline text-md text-center lg:text-xl">Download my CV</a>
             <router-link to="/#contact" class="mt-6 mb-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">Contact Me</router-link>
         </div>
     </section>
